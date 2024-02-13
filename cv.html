@@ -22,7 +22,7 @@
             
                 <h2>Let's talk</h2>
                 <h2><span>Right now</span></h2>
-                <p>Unlock  our potential! Engage in meaningful conversations at work. Share ideas, collaborate, and foster a vibrant workplace. Communication is the key to innovation and success. Start talking today!</p>
+                <p>Unlock our potential! Engage in meaningful conversations at work. Share ideas, collaborate, and foster a vibrant workplace. Communication is the key to innovation and success. Start talking today!</p>
                 <br>
                 <h2>I'd love from you.</h2>
             
@@ -32,34 +32,38 @@
 
             </div>
             
-            <div class="formulaire" id="formulaire">
+            <form action="config.php" method="post">
+
+                <div class="formulaire" id="formulaire">
             
-                <h3>Let's connect so we can get your project going!</h3>
-                <div class="input">
-                    <input type="text" placeholder="First Name">
+                    <h3>Let's connect so we can get your project going!</h3>
+                    <div class="input">
+                        <input type="text" placeholder="First Name" name="name">
+                    </div>
+    
+                    <div class="input">
+                        <input type="text" placeholder="Last Name" name="lastname">
+                    </div>
+                    
+                    <div class="input">
+                        <input type="email" placeholder="Email" name="email">
+                    </div>
+                    
+                    <div class="input">
+                        <input type="text" placeholder="Company" name="company">
+                    </div>
+                    
+                    <div class="input">
+                        <input type="text" placeholder="Tell me a bit more!" id="text" name="information">
+                    </div>
+                    
+                    <div class="send">
+                        <button type="submit" name="button">GET STARTED</button>
+                    </div>
+    
                 </div>
 
-                <div class="input">
-                    <input type="text" placeholder="Last Name">
-                </div>
-                
-                <div class="input">
-                    <input type="email" placeholder="Email">
-                </div>
-                
-                <div class="input">
-                    <input type="text" placeholder="Company">
-                </div>
-                
-                <div class="input">
-                    <input type="text" placeholder="Tell me a bit more!" id="text">
-                </div>
-                
-                <div class="send">
-                    <button type="submit">GET STARTED</button>
-                </div>
-
-            </div>
+            </form>
             
         </div>
         
