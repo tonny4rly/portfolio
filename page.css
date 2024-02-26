@@ -2,9 +2,15 @@
   color: azure;
   cursor: pointer;
 }
+@media only screen and (max-width: 314px) {
+  * {
+    display: none;
+  }
+}
 
 body {
   background-image: url(./imgs/5ad47aae12355d55c86bcb408d88ba08.jpg);
+  backdrop-filter: blur(10px);
   background-size: cover;
   font-family: "Times New Roman", Times, serif;
   overflow-x: hidden;
@@ -12,7 +18,6 @@ body {
   padding: 12px;
 }
 body .container {
-  backdrop-filter: blur(10px);
   display: flex;
 }
 @media only screen and (max-width: 1440px) and (min-width: 1024px) {
