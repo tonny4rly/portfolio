@@ -194,6 +194,11 @@ body ul {
     margin-top: -975px;
   }
 }
+@media only screen and (max-width: 870px) {
+  body ul {
+    margin-top: -1003px;
+  }
+}
 @media only screen and (max-width: 846px) {
   body ul {
     margin-top: -1003px;
@@ -202,6 +207,11 @@ body ul {
 @media only screen and (max-width: 766px) {
   body ul {
     margin-top: -800px;
+  }
+}
+@media only screen and (max-width: 643px) {
+  body ul {
+    margin-top: -828px;
   }
 }
 @media only screen and (max-width: 619px) {
@@ -214,14 +224,29 @@ body ul {
     margin-top: -828px;
   }
 }
+@media only screen and (max-width: 495px) {
+  body ul {
+    margin-top: -856px;
+  }
+}
 @media only screen and (max-width: 470px) {
   body ul {
     margin-top: -856px;
   }
 }
+@media only screen and (max-width: 399px) {
+  body ul {
+    margin-top: -884px;
+  }
+}
 @media only screen and (max-width: 375px) {
   body ul {
     margin-top: -884px;
+  }
+}
+@media only screen and (max-width: 371px) {
+  body ul {
+    margin-top: -913px;
   }
 }
 @media only screen and (max-width: 366px) {
@@ -237,6 +262,11 @@ body ul {
 @media only screen and (max-width: 347px) {
   body ul {
     margin-top: -910px;
+  }
+}
+@media only screen and (max-width: 339px) {
+  body ul {
+    margin-top: -939px;
   }
 }
 @media only screen and (max-width: 315px) {
@@ -559,12 +589,14 @@ body .contact2 {
   }
 }
 @media only screen and (max-width: 1145px) and (min-width: 1024px) {
-  body #phone, body #texto {
+  body #phone,
+  body #texto {
     font-size: 17px;
   }
 }
 @media only screen and (max-width: 357px) {
-  body #phone, body #texto {
+  body #phone,
+  body #texto {
     font-size: 16px;
   }
 }
@@ -584,4 +616,4 @@ body .contact2 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=page.css.map */

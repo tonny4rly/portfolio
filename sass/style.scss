@@ -1,496 +1,509 @@
 //_________________________________________________Tout le contenu du portfolio_________________________________________
-*{
-    color: azure;
-    cursor: pointer;
+* {
+  color: azure;
+  cursor: pointer;
 }
 //____________________________________________________________________________________________________________________________________________________
-body{
-    background-image: url(./imgs/5ad47aae12355d55c86bcb408d88ba08.jpg);
-    background-size: cover;
-    font-family: 'Times New Roman', Times, serif;
-    overflow-x: hidden;
+body {
+  background-image: url(./imgs/5ad47aae12355d55c86bcb408d88ba08.jpg);
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
+  height: 100%;
+  padding: 12px;
+  .container {
+    backdrop-filter: blur(10px);
+    display: flex;
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 1023px) {
+      padding-top: 70px;
+      flex-wrap: wrap;
+    }
+  }
+  //_____________________________________________Le côté gauche du portfolio_____________________________________
+  .cg {
+    width: 400px;
+    float: left;
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      width: 300px;
+    }
+    @media only screen and (max-width: 1023px) {
+      width: 100%;
+    }
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 400px;
+    border-radius: 200px;
+    transition: 0.6s;
+    &:hover {
+      border-radius: 10px;
+      transition: 0.5s;
+      cursor: all-scroll;
+    }
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      width: 300px;
+    }
+    @media only screen and (max-width: 766px) {
+      width: 300px;
+    }
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform-origin: right;
+    transition: 0.3s;
+    &:hover {
+      color: rgb(214, 186, 24);
+      text-shadow: 0px 0px 3px azure;
+      transform-origin: left;
+      transition: 0.2s;
+    }
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      font-size: 35px;
+    }
+    @media only screen and (max-width: 1023px) {
+      font-size: 45px;
+    }
+    @media only screen and (max-width: 766px) {
+      font-size: 30px;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .insi {
+    margin: 15px;
+  }
+  span {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(214, 186, 24);
+  }
+  .reseau1 {
+    display: flex;
+    justify-content: center;
+  }
+  .reseau2 {
+    display: flex;
+    justify-content: center;
+  }
+  .social {
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      display: flex;
+      justify-content: center;
+    }
+    @media only screen and (max-width: 766px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  label {
+    font-family: cursive;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  i {
+    font-family: cursive;
+    color: rgb(214, 186, 24);
+    font-size: 30px;
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      font-size: 25px;
+    }
+  }
+  #snap {
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      font-size: 17px;
+    }
+    @media only screen and (max-width: 357px) {
+      font-size: 16px;
+    }
+  }
+  //____________________________________________________________________________________________________________________________________________
+
+  //_____________________________________________Le côté droit du portfolio_____________________________________
+  .cd {
+    width: auto;
+    padding: 16px;
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 1023px) {
+      width: 100%;
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(6, 125, 223, 0.671);
+    border-radius: 25px;
+  }
+  .nav {
+    width: 600px;
+    padding: 0px;
+    @media only screen and (max-width: 766px) {
+      width: 300px;
+    }
+    @media only screen and (max-width: 357px) {
+      width: 275px;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    @media only screen and (max-width: 1023px) {
+      margin-top: -975px;
+    }
+    @media only screen and (max-width: 870px) {
+      margin-top: -1003px;
+    }
+    @media only screen and (max-width: 846px) {
+      margin-top: -1003px;
+    }
+    @media only screen and (max-width: 766px) {
+      margin-top: -800px;
+    }
+    @media only screen and (max-width: 643px) {
+      margin-top: -828px;
+    }
+    @media only screen and (max-width: 619px) {
+      margin-top: -828px;
+    }
+    @media only screen and (max-width: 537px) {
+      margin-top: -828px;
+    }
+    @media only screen and (max-width: 495px) {
+      margin-top: -856px;
+    }
+    @media only screen and (max-width: 470px) {
+      margin-top: -856px;
+    }
+    @media only screen and (max-width: 399px) {
+      margin-top: -884px;
+    }
+    @media only screen and (max-width: 375px) {
+      margin-top: -884px;
+    }
+    @media only screen and (max-width: 371px) {
+      margin-top: -913px;
+    }
+    @media only screen and (max-width: 366px) {
+      margin-top: -910px;
+    }
+    @media only screen and (max-width: 357px) {
+      margin-top: -883px;
+    }
+    @media only screen and (max-width: 347px) {
+      margin-top: -910px;
+    }
+    @media only screen and (max-width: 339px) {
+      margin-top: -939px;
+    }
+    @media only screen and (max-width: 315px) {
+      margin-top: -940px;
+    }
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    font-family: cursive;
+    &:hover {
+      color: rgb(214, 186, 24);
+      cursor: default;
+    }
+  }
+  .active {
+    color: rgb(214, 186, 24);
+  }
+  .lien_menu {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #long {
+    display: block;
+    margin-right: -255px;
+    margin-top: 3px;
+    @media only screen and (max-width: 766px) {
+      display: none;
+    }
+  }
+  #small {
+    display: none;
+    @media only screen and (max-width: 766px) {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+  .center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media only screen and (max-width: 1023px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .advantage {
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      width: 676px;
+    }
+    @media only screen and (max-width: 1023px) {
+      width: 700px;
+    }
+    @media only screen and (max-width: 766px) {
+      width: 320px;
+    }
+    @media only screen and (max-width: 357px) {
+      width: 290px;
+      margin-left: -12px;
+    }
+  }
+  .competence {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(214, 185, 24, 0.363);
+    border-radius: 25px;
+    transition: 0.6s;
+    width: 1000px;
+    padding-bottom: 20px;
+    &:hover {
+      background-color: rgba(6, 125, 223, 0.671);
+      transition: 0.5s;
+    }
+    @media only screen and (max-width: 1023px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media only screen and (max-width: 766px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 320px;
+    }
+  }
+  .content {
+    padding-top: 35px;
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      padding-top: 20px;
+    }
+    @media only screen and (max-width: 1023px) {
+      margin-left: 120px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media only screen and (max-width: 766px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 0px;
+    }
+  }
+  .frontend {
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      width: 625px;
+    }
+    @media only screen and (max-width: 766px) {
+      width: 200px;
+    }
+    @media only screen and (max-width: 357px) {
+      margin-left: 13px;
+    }
+  }
+  #frontend {
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      margin-top: 10px;
+    }
+  }
+  .front {
+    width: 400px;
+    position: relative;
+    padding: 1.5rem;
+    border: 3px solid rgba(6, 125, 223, 0.671);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+      width: 248px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+    }
+    @media only screen and (max-width: 766px) {
+      width: 273px;
+      padding: 10px;
+      padding-left: 20px;
+      margin-left: -50px;
+    }
+    @media only screen and (max-width: 357px) {
+      width: 250px;
+    }
+    &:hover {
+      border: 3px solid white;
+      transition: 0.3s;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: rgba(214, 185, 24, 0.925);
+      border-radius: 20px;
+      z-index: -1;
+      transition: 1s;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+  }
+  h3 {
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s;
+    &:hover {
+      background-color: rgba(214, 185, 24, 0.219);
+      transition: 0.5s;
+    }
+    @media only screen and (max-width: 766px) {
+      font-size: 20px;
+    }
+  }
+  .progress {
+    display: flex;
+    @media only screen and (max-width: 766px) {
+      width: 265px;
+    }
+  }
+  .bar {
+    width: 330px;
+    border: 2px solid rgba(6, 125, 223, 0.671);
+    border-radius: 5px;
+    height: 12px;
+    transition: 0.3s;
+    &:hover {
+      border: 2px solid white;
+      transition: 0.2s;
+    }
+    @media only screen and (max-width: 766px) {
+      width: 200px;
+    }
+  }
+  .html {
+    display: block;
+    border-radius: 5px;
     height: 100%;
-    padding: 12px;
-    .container{
-        backdrop-filter: blur(10px);
-        display: flex;
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            width: 100%;
-        }
-        @media only screen and (max-width: 1023px){
-            padding-top: 70px;
-            flex-wrap: wrap;
-        }
+    width: 90%;
+    background: azure;
+    transition: 0.4s;
+    &:hover {
+      background: rgb(214, 186, 24);
+      transition: 0.3s;
     }
-    //_____________________________________________Le côté gauche du portfolio_____________________________________
-    .cg{
-        width: 400px;
-        float: left;
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            width: 300px;
-        }
-        @media only screen and (max-width: 1023px){
-            width: 100%;
-        }
+  }
+  .css {
+    display: block;
+    border-radius: 5px;
+    height: 100%;
+    width: 60%;
+    background: azure;
+    transition: 0.4s;
+    &:hover {
+      background: rgb(214, 186, 24);
+      transition: 0.3s;
     }
-    .logo{
-        display: flex;
-        justify-content: center;
+  }
+  .js {
+    display: block;
+    border-radius: 5px;
+    height: 100%;
+    width: 75%;
+    background: azure;
+    transition: 0.4s;
+    &:hover {
+      background: rgb(214, 186, 24);
+      transition: 0.3s;
     }
-    img{
-        width: 400px;
-        border-radius: 200px;
-        transition: 0.6s;
-        &:hover{
-            border-radius: 10px;
-            transition: 0.5s;
-            cursor: all-scroll;  
-        }
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            width: 300px;
-        }
-        @media only screen and (max-width: 766px){
-            width: 300px;     
-        }
+  }
+  .language {
+    display: block;
+    border-radius: 5px;
+    height: 100%;
+    width: 60%;
+    background: azure;
+    transition: 0.4s;
+    &:hover {
+      background: rgb(214, 186, 24);
+      transition: 0.3s;
     }
-    h2{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 35px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        transform-origin: right;
-        transition: 0.3s;
-        &:hover{
-            color:rgb(214, 186, 24);
-            text-shadow: 0px 0px 3px azure;
-            transform-origin: left;
-            transition: 0.2s;
-        }
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            font-size: 35px;
-        }
-        @media only screen and (max-width: 1023px){
-            font-size: 45px;
-        }
-        @media only screen and (max-width: 766px){
-            font-size: 30px;     
-        }
-    }
-    p{
-        text-align: center;
-        font-size: 25px;
-    }
-    .insi{
-        margin: 15px;
-    }
-    span{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: rgb(214, 186, 24);
-    }
-    .reseau1{
-        display: flex;
-        justify-content: center;
-    }
-    .reseau2{
-        display: flex;
-        justify-content: center;
-    }
-    .social{
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            display: flex;
-            justify-content: center;
-        }
-        @media only screen and (max-width: 766px){
-            display: flex;
-            justify-content: center;     
-        }
-    }
-    label{
-        font-family: cursive;
-        font-size: 20px;
-        margin-right: 15px;
-    }
-    i{
-        font-family: cursive;
-        color: rgb(214, 186, 24);
-        font-size: 30px;
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            font-size: 25px;
-        }
-    }
-    #snap{
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            font-size: 17px;
-        }
-        @media only screen and (max-width: 357px){
-            font-size: 16px;     
-        }
-    }
-    //____________________________________________________________________________________________________________________________________________
+  }
+  .vide {
+    width: 20px;
+  }
+  //____________________________________________________________________________________________________________________________________________
 
-
-
-
-    //_____________________________________________Le côté droit du portfolio_____________________________________
-    .cd{
-        width: auto;
-        padding: 16px;
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            width: 100%;
-        }
-        @media only screen and (max-width: 1023px){
-           width: 100%;
-        }   
+  //_____________________________________________Le footer du portfolio portfolio_____________________________________
+  .contact {
+    margin-top: 20px;
+    background-color: rgba(6, 125, 223, 0.671);
+    border-radius: 25px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .contact1 {
+    display: flex;
+    justify-content: center;
+  }
+  .contact2 {
+    display: flex;
+    justify-content: space-evenly;
+    @media only screen and (max-width: 1023px) {
+      flex-wrap: wrap;
     }
-    .menu{
-        display: flex;
-        justify-content: center;
-        background-color: rgba(6, 125, 223, 0.671);
-        border-radius: 25px;
+  }
+  .join {
+    @media only screen and (max-width: 1023px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
-    .nav{
-        width: 600px;
-        padding: 0px;
-        @media only screen and (max-width: 766px){
-            width: 300px;     
-        }
-        @media only screen and (max-width: 357px){
-            width: 275px;     
-        }
+  }
+  #phone,
+  #texto {
+    @media only screen and (max-width: 1145px) and (min-width: 1024px) {
+      font-size: 17px;
     }
-    ul{
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
-        @media only screen and (max-width: 1023px){
-            margin-top: -975px;
-        }
-        @media only screen and (max-width: 846px){
-            margin-top: -1003px;
-        }
-        @media only screen and (max-width: 766px){
-            margin-top: -800px;     
-        }
-        @media only screen and (max-width: 619px){
-            margin-top: -828px;     
-        }
-        @media only screen and (max-width: 537px){
-            margin-top: -828px;     
-        }
-        @media only screen and (max-width: 470px){
-            margin-top: -856px;     
-        }
-        @media only screen and (max-width: 375px){
-            margin-top: -884px;     
-        }
-        @media only screen and (max-width: 366px){
-            margin-top: -910px;     
-        }
-        @media only screen and (max-width: 357px){
-            margin-top: -883px;     
-        }
-        @media only screen and (max-width: 347px){
-            margin-top: -910px;     
-        }
-        @media only screen and (max-width: 315px){
-            margin-top: -940px;     
-        }
+    @media only screen and (max-width: 357px) {
+      font-size: 16px;
     }
-    li{
-        list-style-type: none;
+  }
+  #mail {
+    @media only screen and (max-width: 1145px) and (min-width: 1024px) {
+      font-size: 15px;
     }
-    a{
-        text-decoration: none;
-        font-family: cursive;
-        &:hover{
-            color: rgb(214, 186, 24);
-            cursor: default;
-        }
+    @media only screen and (max-width: 766px) {
+      font-size: 16px;
     }
-    .active{
-        color: rgb(214, 186, 24);
+    @media only screen and (max-width: 357px) {
+      font-size: 13px;
     }
-    .lien_menu{
-        font-family: cursive;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    #long{
-        display: block;
-        margin-right: -255px;
-        margin-top: 3px;
-        @media only screen and (max-width: 766px){
-            display: none;         
-        }
-    }
-    #small{
-        display: none;
-        @media only screen and (max-width: 766px){
-            display: block;
-            margin-top: 5px;  
-        }
-    }
-    .center{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        @media only screen and (max-width: 1023px){
-            display: flex;
-            justify-content: center;
-        }
-    }
-    .advantage{
-        display: flex;
-        justify-content: center;
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            width: 676px;
-        }
-        @media only screen and (max-width: 1023px){
-            width: 700px;
-        }
-        @media only screen and (max-width: 766px){
-            width: 320px;     
-        }
-        @media only screen and (max-width: 357px){
-            width: 290px;
-            margin-left: -12px;     
-        }
-    }
-    .competence{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(214, 185, 24, 0.363);
-        border-radius: 25px;
-        transition: 0.6s;
-        width: 1000px;
-        padding-bottom: 20px;
-        &:hover{
-            background-color: rgba(6, 125, 223, 0.671);
-            transition: 0.5s;
-        }
-        @media only screen and (max-width: 1023px){
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        @media only screen and (max-width: 766px){
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 320px;     
-        }
-    }
-    .content{
-        padding-top: 35px;
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            padding-top: 20px;
-        }
-        @media only screen and (max-width: 1023px){
-            margin-left: 120px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        @media only screen and (max-width: 766px){
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-left: 0px;     
-        }
-    }
-    .frontend{
-        display: flex;
-        flex-wrap: wrap;
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            width: 625px;
-        }
-        @media only screen and (max-width: 766px){
-            width: 200px;     
-        }
-        @media only screen and (max-width: 357px){
-            margin-left: 13px;     
-        }
-    }
-    #frontend{
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            margin-top: 10px;
-        }
-    }
-    .front{
-        width: 400px;
-        position: relative;
-        padding: 1.5rem;
-        border: 3px solid rgba(6, 125, 223, 0.671);
-        border-radius: 20px;
-        margin-bottom: 20px;
-        @media only screen and (max-width: 1440px) and (min-width: 1024px){
-            width: 248px;
-            margin-bottom: 0px;
-            padding-top: 0px;
-        }
-        @media only screen and (max-width: 766px){
-            width: 273px;
-            padding: 10px;
-            padding-left: 20px;
-            margin-left: -50px; 
-        }
-        @media only screen and (max-width: 357px){
-            width: 250px;     
-        }
-        &:hover{
-            border: 3px solid white;
-            transition: 0.3s;
-        }
-        &::before{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100%;
-            background: rgba(214, 185, 24, 0.925);
-            border-radius: 20px;
-            z-index: -1;
-            transition: 1s;
-        }
-        &:hover::before{
-            width: 100%;
-        }
-    }
-    h3{
-        font-family: fantasy;
-        font-weight: bold;
-        font-size: 25px;
-        transition: 0.6s;
-        &:hover{
-            background-color: rgba(214, 185, 24, 0.219);
-            transition: 0.5s;
-        }
-        @media only screen and (max-width: 766px){
-            font-size: 20px;     
-        }
-    }
-    .progress{
-        display: flex;
-        @media only screen and (max-width: 766px){
-            width: 265px;     
-        }
-    }
-    .bar{
-        width: 330px;
-        border: 2px solid rgba(6, 125, 223, 0.671);
-        border-radius: 5px;
-        height: 12px;
-        transition: 0.3s;
-        &:hover{
-            border: 2px solid white;
-            transition: 0.2s;
-        }
-        @media only screen and (max-width: 766px){
-            width: 200px;    
-        }
-    }
-    .html{
-        display: block;
-        border-radius: 5px;
-        height: 100%;
-        width: 90%;
-        background: azure;
-        transition: 0.4s;
-        &:hover{
-            background: rgb(214, 186, 24);
-            transition: 0.3s;
-        }
-    }
-    .css{
-        display: block;
-        border-radius: 5px;
-        height: 100%;
-        width: 60%;
-        background: azure;
-        transition: 0.4s;
-        &:hover{
-            background: rgb(214, 186, 24);
-            transition: 0.3s;
-        }
-    }
-    .js{
-        display: block;
-        border-radius: 5px;
-        height: 100%;
-        width: 75%;
-        background: azure;
-        transition: 0.4s;
-        &:hover{
-            background: rgb(214, 186, 24);
-            transition: 0.3s;
-        }
-    }
-    .language{
-        display: block;
-        border-radius: 5px;
-        height: 100%;
-        width: 60%;
-        background: azure;
-        transition: 0.4s;
-        &:hover{
-            background: rgb(214, 186, 24);
-            transition: 0.3s;
-        }
-    }
-    .vide{
-        width: 20px;
-    }
-    //____________________________________________________________________________________________________________________________________________
-
-
-
-
-    //_____________________________________________Le footer du portfolio portfolio_____________________________________
-    .contact{
-        margin-top: 20px;
-        background-color: rgba(6, 125, 223, 0.671);
-        border-radius: 25px;
-        padding-bottom: 30px;
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-    .contact1{
-        display: flex;
-        justify-content: center;
-    }
-    .contact2{
-        display: flex;
-        justify-content: space-evenly;
-        @media only screen and (max-width: 1023px){
-            flex-wrap: wrap;
-        }
-    }
-    .join{
-        @media only screen and (max-width: 1023px){
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-    }
-    #phone, #texto{
-        @media only screen and (max-width: 1145px) and (min-width: 1024px){
-            font-size: 17px;
-        }
-        @media only screen and (max-width: 357px){
-            font-size: 16px;     
-        }    
-    }
-    #mail{
-        @media only screen and (max-width: 1145px) and (min-width: 1024px){
-            font-size: 15px;
-        }
-        @media only screen and (max-width: 766px){
-            font-size: 16px;     
-        }
-        @media only screen and (max-width: 357px){
-            font-size: 13px;     
-        }    
-    }
+  }
 }
 //____________________________________________________________________________________________________________________________________________
