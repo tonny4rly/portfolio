@@ -1,0 +1,189 @@
+* {
+  font-family: fantasy;
+  cursor: pointer;
+}
+body {
+  background-image: url(./imgs/thumb2-blue-abstract-background-blue-creative-background-neon-lines-background-neon-blue-light.jpg);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+}
+.button,
+.logo {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 100px;
+  color: rgb(6, 125, 223);
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: -25px;
+  transition: 1s;
+}
+h1:hover {
+  font-size: 110px;
+  transition: 0.5s;
+}
+h2 {
+  font-size: 70px;
+  color: rgba(214, 185, 24, 0.922);
+  text-align: center;
+  margin-top: -50px;
+  transition: 0.5s;
+}
+h2:hover {
+  font-size: 75px;
+  transition: 0.5s;
+}
+a {
+  font-family: cursive;
+  text-decoration: none;
+  color: azure;
+  font-size: 50px;
+  margin-top: -50px;
+}
+a:hover {
+  font-weight: bold;
+  color: azure;
+  border: 0px solid;
+  border-radius: 10px;
+  background-color: rgba(214, 185, 24, 0.486);
+  transition: 0.3s;
+  padding: 0px 20px;
+  cursor: default;
+}
+img {
+  width: 400px;
+  border: solid 2px rgba(214, 185, 24, 0.486);
+  border-radius: 200px;
+  transition: 0.5s;
+}
+img:hover {
+  border-radius: 205px 205px 50px 50px;
+  transition: 1s;
+  transform-origin: top;
+}
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 75px;
+  }
+  h1:hover {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h2:hover {
+    font-size: 55px;
+  }
+  a {
+    font-size: 25px;
+  }
+  a:hover {
+    font-size: 30px;
+  }
+  img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 55px;
+  }
+  h1:hover {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 40px;
+    margin-top: -40px;
+  }
+  h2:hover {
+    font-size: 45px;
+  }
+  a {
+    font-size: 20px;
+    margin-top: -40px;
+  }
+  a:hover {
+    font-size: 25px;
+  }
+  img {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 30px;
+  }
+  h1:hover {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+  h2:hover {
+    font-size: 25px;
+  }
+  a {
+    font-size: 15px;
+    margin-top: -20px;
+  }
+  a:hover {
+    font-size: 20px;
+  }
+  img {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 20px;
+  }
+  h1:hover {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  h2:hover {
+    font-size: 15px;
+  }
+  a {
+    font-size: 9px;
+  }
+  a:hover {
+    font-size: 12px;
+  }
+  img {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 12px;
+  }
+  h1:hover {
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 6px;
+  }
+  h2:hover {
+    font-size: 11px;
+  }
+  a {
+    font-size: 5px;
+  }
+  a:hover {
+    font-size: 10px;
+  }
+  img {
+    width: 75px;
+  }
+}

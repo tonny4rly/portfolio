@@ -1,189 +1,587 @@
 * {
-  font-family: fantasy;
+  color: azure;
   cursor: pointer;
 }
+
 body {
-  background-image: url(./imgs/thumb2-blue-abstract-background-blue-creative-background-neon-lines-background-neon-blue-light.jpg);
+  background-image: url(./imgs/5ad47aae12355d55c86bcb408d88ba08.jpg);
   background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
+  height: 100%;
+  padding: 12px;
+}
+body .container {
   backdrop-filter: blur(10px);
-}
-.container {
   display: flex;
-  justify-content: center;
-  padding: 100px 0px;
 }
-.button,
-.logo {
-  display: flex;
-  justify-content: center;
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body .container {
+    width: 100%;
+  }
 }
-h1 {
-  font-size: 100px;
-  color: rgb(6, 125, 223);
-  text-align: center;
-  margin-top: -5px;
-  margin-bottom: -25px;
-  transition: 1s;
+@media only screen and (max-width: 1023px) {
+  body .container {
+    padding-top: 70px;
+    flex-wrap: wrap;
+  }
 }
-h1:hover {
-  font-size: 110px;
-  transition: 0.5s;
-}
-h2 {
-  font-size: 70px;
-  color: rgba(214, 185, 24, 0.922);
-  text-align: center;
-  margin-top: -50px;
-  transition: 0.5s;
-}
-h2:hover {
-  font-size: 75px;
-  transition: 0.5s;
-}
-a {
-  font-family: cursive;
-  text-decoration: none;
-  color: azure;
-  font-size: 50px;
-  margin-top: -50px;
-}
-a:hover {
-  font-weight: bold;
-  color: azure;
-  border: 0px solid;
-  border-radius: 10px;
-  background-color: rgba(214, 185, 24, 0.486);
-  transition: 0.3s;
-  padding: 0px 20px;
-  cursor: default;
-}
-img {
+body .cg {
   width: 400px;
-  border: solid 2px rgba(214, 185, 24, 0.486);
-  border-radius: 200px;
-  transition: 0.5s;
+  float: left;
 }
-img:hover {
-  border-radius: 205px 205px 50px 50px;
-  transition: 1s;
-  transform-origin: top;
-}
-@media only screen and (max-width: 1024px) {
-  h1 {
-    font-size: 75px;
-  }
-  h1:hover {
-    font-size: 80px;
-  }
-  h2 {
-    font-size: 50px;
-  }
-  h2:hover {
-    font-size: 55px;
-  }
-  a {
-    font-size: 25px;
-  }
-  a:hover {
-    font-size: 30px;
-  }
-  img {
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body .cg {
     width: 300px;
   }
 }
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 55px;
-  }
-  h1:hover {
-    font-size: 60px;
-  }
-  h2 {
-    font-size: 40px;
-    margin-top: -40px;
-  }
-  h2:hover {
-    font-size: 45px;
-  }
-  a {
-    font-size: 20px;
-    margin-top: -40px;
-  }
-  a:hover {
-    font-size: 25px;
-  }
-  img {
-    width: 200px;
+@media only screen and (max-width: 1023px) {
+  body .cg {
+    width: 100%;
   }
 }
-@media only screen and (max-width: 425px) {
-  h1 {
-    font-size: 30px;
+body .logo {
+  display: flex;
+  justify-content: center;
+}
+body img {
+  width: 400px;
+  border-radius: 200px;
+  transition: 0.6s;
+}
+body img:hover {
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: all-scroll;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body img {
+    width: 300px;
   }
-  h1:hover {
+}
+@media only screen and (max-width: 766px) {
+  body img {
+    width: 300px;
+  }
+}
+body h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform-origin: right;
+  transition: 0.3s;
+}
+body h2:hover {
+  color: rgb(214, 186, 24);
+  text-shadow: 0px 0px 3px azure;
+  transform-origin: left;
+  transition: 0.2s;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body h2 {
     font-size: 35px;
   }
-  h2 {
-    font-size: 20px;
-    margin-top: -10px;
+}
+@media only screen and (max-width: 1023px) {
+  body h2 {
+    font-size: 45px;
   }
-  h2:hover {
+}
+@media only screen and (max-width: 766px) {
+  body h2 {
+    font-size: 30px;
+  }
+}
+body p {
+  text-align: center;
+  font-size: 25px;
+}
+body .insi {
+  margin: 15px;
+}
+body span {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(214, 186, 24);
+}
+body .reseau1 {
+  display: flex;
+  justify-content: center;
+}
+body .reseau2 {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body .social {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 766px) {
+  body .social {
+    display: flex;
+    justify-content: center;
+  }
+}
+body label {
+  font-family: cursive;
+  font-size: 20px;
+  margin-right: 15px;
+}
+body i {
+  font-family: cursive;
+  color: rgb(214, 186, 24);
+  font-size: 30px;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body i {
     font-size: 25px;
   }
-  a {
-    font-size: 15px;
-    margin-top: -20px;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body #snap {
+    font-size: 17px;
   }
-  a:hover {
-    font-size: 20px;
+}
+@media only screen and (max-width: 357px) {
+  body #snap {
+    font-size: 16px;
   }
-  img {
-    width: 150px;
+}
+body .cd {
+  width: auto;
+  padding: 16px;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body .cd {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  body .cd {
+    width: 100%;
+  }
+}
+body .menu {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(6, 125, 223, 0.671);
+  border-radius: 25px;
+}
+body .nav {
+  width: 600px;
+  padding: 0px;
+}
+@media only screen and (max-width: 766px) {
+  body .nav {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 357px) {
+  body .nav {
+    width: 275px;
+  }
+}
+body ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+@media only screen and (max-width: 1023px) {
+  body ul {
+    margin-top: -975px;
+  }
+}
+@media only screen and (max-width: 846px) {
+  body ul {
+    margin-top: -1003px;
+  }
+}
+@media only screen and (max-width: 766px) {
+  body ul {
+    margin-top: -800px;
+  }
+}
+@media only screen and (max-width: 619px) {
+  body ul {
+    margin-top: -828px;
+  }
+}
+@media only screen and (max-width: 537px) {
+  body ul {
+    margin-top: -828px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  body ul {
+    margin-top: -856px;
   }
 }
 @media only screen and (max-width: 375px) {
-  h1 {
+  body ul {
+    margin-top: -884px;
+  }
+}
+@media only screen and (max-width: 366px) {
+  body ul {
+    margin-top: -910px;
+  }
+}
+@media only screen and (max-width: 357px) {
+  body ul {
+    margin-top: -883px;
+  }
+}
+@media only screen and (max-width: 347px) {
+  body ul {
+    margin-top: -910px;
+  }
+}
+@media only screen and (max-width: 315px) {
+  body ul {
+    margin-top: -940px;
+  }
+}
+body li {
+  list-style-type: none;
+}
+body a {
+  text-decoration: none;
+  font-family: cursive;
+}
+body a:hover {
+  color: rgb(214, 186, 24);
+  cursor: default;
+}
+body .active {
+  color: rgb(214, 186, 24);
+}
+body .lien_menu {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+body #long {
+  display: block;
+  margin-right: -255px;
+  margin-top: 3px;
+}
+@media only screen and (max-width: 766px) {
+  body #long {
+    display: none;
+  }
+}
+body #small {
+  display: none;
+}
+@media only screen and (max-width: 766px) {
+  body #small {
+    display: block;
+    margin-top: 5px;
+  }
+}
+body .center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (max-width: 1023px) {
+  body .center {
+    display: flex;
+    justify-content: center;
+  }
+}
+body .advantage {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body .advantage {
+    width: 676px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  body .advantage {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 766px) {
+  body .advantage {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 357px) {
+  body .advantage {
+    width: 290px;
+    margin-left: -12px;
+  }
+}
+body .competence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(214, 185, 24, 0.363);
+  border-radius: 25px;
+  transition: 0.6s;
+  width: 1000px;
+  padding-bottom: 20px;
+}
+body .competence:hover {
+  background-color: rgba(6, 125, 223, 0.671);
+  transition: 0.5s;
+}
+@media only screen and (max-width: 1023px) {
+  body .competence {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 766px) {
+  body .competence {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 320px;
+  }
+}
+body .content {
+  padding-top: 35px;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body .content {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  body .content {
+    margin-left: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 766px) {
+  body .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0px;
+  }
+}
+body .frontend {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body .frontend {
+    width: 625px;
+  }
+}
+@media only screen and (max-width: 766px) {
+  body .frontend {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 357px) {
+  body .frontend {
+    margin-left: 13px;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body #frontend {
+    margin-top: 10px;
+  }
+}
+body .front {
+  width: 400px;
+  position: relative;
+  padding: 1.5rem;
+  border: 3px solid rgba(6, 125, 223, 0.671);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body .front {
+    width: 248px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+}
+@media only screen and (max-width: 766px) {
+  body .front {
+    width: 273px;
+    padding: 10px;
+    padding-left: 20px;
+    margin-left: -50px;
+  }
+}
+@media only screen and (max-width: 357px) {
+  body .front {
+    width: 250px;
+  }
+}
+body .front:hover {
+  border: 3px solid white;
+  transition: 0.3s;
+}
+body .front::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(214, 185, 24, 0.925);
+  border-radius: 20px;
+  z-index: -1;
+  transition: 1s;
+}
+body .front:hover::before {
+  width: 100%;
+}
+body h3 {
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s;
+}
+body h3:hover {
+  background-color: rgba(214, 185, 24, 0.219);
+  transition: 0.5s;
+}
+@media only screen and (max-width: 766px) {
+  body h3 {
     font-size: 20px;
   }
-  h1:hover {
-    font-size: 25px;
-  }
-  h2 {
-    font-size: 10px;
-  }
-  h2:hover {
-    font-size: 15px;
-  }
-  a {
-    font-size: 9px;
-  }
-  a:hover {
-    font-size: 12px;
-  }
-  img {
-    width: 100px;
+}
+body .progress {
+  display: flex;
+}
+@media only screen and (max-width: 766px) {
+  body .progress {
+    width: 265px;
   }
 }
-@media only screen and (max-width: 320px) {
-  h1 {
-    font-size: 12px;
+body .bar {
+  width: 330px;
+  border: 2px solid rgba(6, 125, 223, 0.671);
+  border-radius: 5px;
+  height: 12px;
+  transition: 0.3s;
+}
+body .bar:hover {
+  border: 2px solid white;
+  transition: 0.2s;
+}
+@media only screen and (max-width: 766px) {
+  body .bar {
+    width: 200px;
   }
-  h1:hover {
+}
+body .html {
+  display: block;
+  border-radius: 5px;
+  height: 100%;
+  width: 90%;
+  background: azure;
+  transition: 0.4s;
+}
+body .html:hover {
+  background: rgb(214, 186, 24);
+  transition: 0.3s;
+}
+body .css {
+  display: block;
+  border-radius: 5px;
+  height: 100%;
+  width: 60%;
+  background: azure;
+  transition: 0.4s;
+}
+body .css:hover {
+  background: rgb(214, 186, 24);
+  transition: 0.3s;
+}
+body .js {
+  display: block;
+  border-radius: 5px;
+  height: 100%;
+  width: 75%;
+  background: azure;
+  transition: 0.4s;
+}
+body .js:hover {
+  background: rgb(214, 186, 24);
+  transition: 0.3s;
+}
+body .language {
+  display: block;
+  border-radius: 5px;
+  height: 100%;
+  width: 60%;
+  background: azure;
+  transition: 0.4s;
+}
+body .language:hover {
+  background: rgb(214, 186, 24);
+  transition: 0.3s;
+}
+body .vide {
+  width: 20px;
+}
+body .contact {
+  margin-top: 20px;
+  background-color: rgba(6, 125, 223, 0.671);
+  border-radius: 25px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+body .contact1 {
+  display: flex;
+  justify-content: center;
+}
+body .contact2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 1023px) {
+  body .contact2 {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  body .join {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1145px) and (min-width: 1024px) {
+  body #phone, body #texto {
     font-size: 17px;
   }
-  h2 {
-    font-size: 6px;
-  }
-  h2:hover {
-    font-size: 11px;
-  }
-  a {
-    font-size: 5px;
-  }
-  a:hover {
-    font-size: 10px;
-  }
-  img {
-    width: 75px;
+}
+@media only screen and (max-width: 357px) {
+  body #phone, body #texto {
+    font-size: 16px;
   }
 }
+@media only screen and (max-width: 1145px) and (min-width: 1024px) {
+  body #mail {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 766px) {
+  body #mail {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 357px) {
+  body #mail {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
