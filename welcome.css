@@ -1,5 +1,5 @@
 * {
-  font-family: fantasy;
+  font-family: Jost;
   cursor: pointer;
 }
 body {
@@ -41,7 +41,7 @@ h2:hover {
   transition: 0.5s;
 }
 a {
-  font-family: cursive;
+  font-family: Cinzel;
   text-decoration: none;
   color: azure;
   font-size: 50px;
