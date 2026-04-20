@@ -10,6 +10,7 @@
 body {
   background-image: url(./imgs/5ad47aae12355d55c86bcb408d88ba08.jpg);
   backdrop-filter: blur(10px);
+  
   background-size: cover;
   font-family: "Times New Roman", Times, serif;
   overflow-x: hidden;
@@ -66,7 +67,7 @@ body {
     transition: 0.3s;
     &:hover {
       color: rgb(214, 186, 24);
-      text-shadow: 0px 0px 3px azure;
+      text-shadow: 0px 0px 3px rgb(127, 133, 133);
       transform-origin: left;
       transition: 0.2s;
     }
@@ -122,7 +123,7 @@ body {
       font-size: 25px;
     }
   }
-  #snap {
+  #github {
     @media only screen and (max-width: 1440px) and (min-width: 1024px) {
       font-size: 17px;
     }
@@ -448,7 +449,7 @@ body {
     display: block;
     border-radius: 5px;
     height: 100%;
-    width: 45%;
+    width: 51%;
     background: azure;
     transition: 0.4s;
     &:hover {
