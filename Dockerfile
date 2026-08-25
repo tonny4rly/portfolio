@@ -1,22 +1,18 @@
-FROM php:8.2-apache
+FROM nginx:alpine
 
-ENV PORT 8080
+# Nettoyage et configuration des permissions
+RUN rm -rf /usr/share/nginx/html/*
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends libzip-dev zip \
-    && docker-php-ext-install zip \
-    && rm -rf /var/lib/apt/lists/*
+# Copie des fichiers statiques
+COPY . /usr/share/nginx/html
 
-# Configure Apache to listen on the PORT used by Cloud Run and enable rewrite
-RUN sed -ri "s/Listen 80/Listen ${PORT}/" /etc/apache2/ports.conf \
-    && sed -ri "s/<VirtualHost \*:80>/<VirtualHost *:${PORT}>/" /etc/apache2/sites-available/000-default.conf \
-    && a2enmod rewrite
+# Ajustement des droits pour l'utilisateur non-root nginx
+RUN chown -R nginx:nginx /usr/share/nginx/html && \
+    chmod -R 755 /usr/share/nginx/html
 
-# Copy app files to the web root
-COPY . /var/www/html/
+# Bonne pratique SecOps : Exécution sous utilisateur non-privilégié
+USER nginx
 
-RUN chown -R www-data:www-data /var/www/html
+EXPOSE 80
 
-EXPOSE 8080
-
-CMD ["apache2-foreground"]
+CMD ["nginx", "-g", "daemon off;"]
